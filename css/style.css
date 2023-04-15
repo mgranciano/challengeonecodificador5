@@ -28,7 +28,8 @@ button {
     height: 48px;
 }
 
-#input textarea {
+#input textarea,
+#output textarea {
     font-family: 'Inter', sans-serif;
     padding: 10px;
     width: 90%;
@@ -78,7 +79,6 @@ body #output {
     top: 8%;
     right: 1%;
     border-radius: 10px;
-    box-shadow: 1px 1px 1px #999;
     line-height: 1.5;
 }
 
@@ -103,6 +103,11 @@ body #output {
 .msg2 {
     color: black;
     font-weight: lighter;
+}
+
+.result textarea {
+    margin-top: 2%;
+    pointer-events: none;
 }
 
 footer {
