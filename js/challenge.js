@@ -114,7 +114,6 @@ function startDecrypt() {
     document.getElementById("txtOutput").value = decrypt(data);
 }
 
-
 //Asignando la acción al boton de encriptar
 var btnEncriptar = document.getElementById("btnEncriptar");
 btnEncriptar.onclick = startEncript;
