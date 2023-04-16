@@ -29,3 +29,8 @@ Ejemplo 2:
 "felicidades" => "fenterlimescimesdaidenters"
 fenterlimescimesdaidenters" => "felicidades"
 ```
+
+## Diseño final
+<p align="center">
+  <img src="https://github.com/mgranciano/challengeonecodificador5/blob/master/img/screen01.png" width="450">
+</p>
