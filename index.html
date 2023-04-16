@@ -12,33 +12,34 @@
 </head>
 
 <body>
-    <section id="logo">
+    <header id="logo">
         <img src="img/a.png">
-    </section>
-    <section id="input">
-        <textarea id="txtInput" placeholder="Ingresa el texto aqui ..."></textarea>
-        <p id="errorInput"><samp class="material-symbols-sharp" style="font-size: 16px;">error</samp><samp>Solo letras minúsculas y sin acentos</samp></p>
-
-    </section>
-    <section id="options">
-        <button id="btnEncriptar">Encriptar</button>
-        <button id="btnDesencriptar">Desencriptar</button>
-    </section>
-    <section id="output">
-        <div id="notresult" class="notresult">
-            <img src="img/msg_clean.png">
-            <p class="msg1">
-                <spam>Ningún mensaje fue encontrado</spam>
-            </p>
-            <p class="msg2">
-                <spam>Ingresar el texto que desees encriptar o desencriptar.</spam>
-            </p>
-        </div>
-        <div id="result" class="result">
-            <textarea id="txtOutput"></textarea>
-            <button id="btnCopiar">Copiar</button>
-        </div>
-    </section>
+    </header>
+    <main>
+        <section id="input">
+            <textarea id="txtInput" placeholder="Ingresa el texto aqui ..."></textarea>
+            <p id="errorInput"><samp class="material-symbols-sharp" style="font-size: 16px;">error</samp><samp>Solo letras minúsculas y sin acentos</samp></p>
+        </section>
+        <section id="options">
+            <button id="btnEncriptar">Encriptar</button>
+            <button id="btnDesencriptar">Desencriptar</button>
+        </section>
+        <section id="output">
+            <div id="notresult" class="notresult">
+                <img src="img/msg_clean.png">
+                <p class="msg1">
+                    <spam>Ningún mensaje fue encontrado</spam>
+                </p>
+                <p class="msg2">
+                    <spam>Ingresar el texto que desees encriptar o desencriptar.</spam>
+                </p>
+            </div>
+            <div id="result" class="result">
+                <textarea id="txtOutput"></textarea>
+                <button id="btnCopiar">Copiar</button>
+            </div>
+        </section>
+    </main>
     <footer>
         <span class="material-symbols-sharp " style="font-size: 11px; ">
             copyright
