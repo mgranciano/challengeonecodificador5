@@ -11,11 +11,24 @@ header {
     width: 70%;
     text-align: center;
     font-size: 16px;
+    display: block;
 }
 
 body section textarea,
 button {
     border-radius: 10px;
+    display: inline-block;
+}
+
+body header {
+    width: 50px;
+    height: 50px;
+    margin-left: 70px;
+}
+
+body header img {
+    width: 31.09px;
+    height: 48px;
 }
 
 body #output {
@@ -29,15 +42,8 @@ body #output {
     line-height: 1.5;
 }
 
-body #logo {
-    width: 50px;
-    height: 50px;
-    margin-left: 70px;
-}
-
-body #logo img {
-    width: 31.09px;
-    height: 48px;
+body #input {
+    height: 60%;
 }
 
 #input textarea,
@@ -50,6 +56,10 @@ body #logo img {
     border: 1px solid #ccc;
     box-shadow: 1px 1px 1px #999;
     resize: none;
+}
+
+#input textarea:focus {
+    border: 1px solid #0A3871;
 }
 
 #input p {
@@ -72,6 +82,7 @@ button {
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
+    margin: 5px;
 }
 
 button:hover {
@@ -98,6 +109,7 @@ footer {
 
 .notresult {
     position: absolute;
+    color: black;
     top: 50%;
     transform: translateY(-50%);
     margin: 0;
@@ -105,17 +117,115 @@ footer {
 }
 
 .msg1 {
-    color: black;
     font-size: 24px;
     font-weight: bold
 }
 
 .msg2 {
-    color: black;
     font-weight: lighter;
 }
 
 .result textarea {
     margin-top: 2%;
     pointer-events: none;
+}
+
+@media screen and (max-device-width:912px) {
+    body section,
+    header {
+        width: 90%;
+    }
+    #input textarea {
+        height: calc(3em * 1.5 * 5);
+    }
+    #output textarea {
+        height: calc(1.7em * 1.5 * 5);
+    }
+    #options {
+        margin-top: 10px;
+        margin-left: 0;
+        width: 100%;
+    }
+    #options button {
+        margin: 0px;
+    }
+    body #output {
+        position: none;
+        margin: 0px 0px 0px 20px;
+        width: 95%;
+        height: 32%;
+        right: 0px;
+        left: 0px;
+        bottom: 0px;
+        top: 64%;
+        text-align: center;
+    }
+    body #output img {
+        display: none;
+    }
+    .notresult {
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+    }
+}
+
+@media screen and (max-device-width:450px) {
+    body section,
+    header {
+        width: 95%;
+    }
+    body header {
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 50px;
+        height: 50px;
+    }
+    body header img {
+        width: 25px;
+        height: 34px;
+    }
+    body section {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    #input textarea {
+        height: calc(3em * 1.5 * 5);
+    }
+    #output textarea {
+        height: calc(1.7em * 1.5 * 5);
+    }
+    #options button {
+        margin: .2em;
+    }
+}
+
+@media screen and (max-device-width:375px) {
+    body section,
+    header {
+        width: 95%;
+    }
+    body header {
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 50px;
+        height: 50px;
+    }
+    body header img {
+        width: 25px;
+        height: 34px;
+    }
+    body section {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    #input textarea {
+        height: calc(1.7em * 1.5 * 5);
+    }
+    #output textarea {
+        height: calc(1em * 1.5 * 5);
+    }
+    #options button {
+        margin: .2em;
+    }
 }
