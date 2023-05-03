@@ -1,0 +1,23 @@
+textarea {
+    font-family: inherit;
+    width: 96%;
+    height: 70vh;
+    line-height: 3;
+    padding-left: 10px;
+    box-shadow: 3px 3px 3px var(--shadow);
+    border-radius: 10px;
+    resize: none;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+textarea:focus {
+    border: 2px solid var(--primary);
+}
+
+@media screen and (max-device-width: 950px) and (max-device-height: 1400px) {
+    textarea {
+        min-height: 30vh;
+        max-height: 30vh;
+    }
+}
