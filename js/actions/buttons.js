@@ -1,24 +1,31 @@
 //Asignando la acción al boton de encriptar
-var btnEncrypt = document.getElementById("btnEncriptar");
+var btnEncrypt = document.getElementById('btnEncrypt');
 btnEncrypt.onclick = encrypt;
 
 //Asignando la acción al boton de desencriptar
-var btnDecrypt = document.getElementById("btnDesencriptar");
+var btnDecrypt = document.getElementById('btnDecrypt');
 btnDecrypt.onclick = decrypt;
 
+//Asignando la acción al boton de desencriptar
+var btnCopy = document.getElementById('btnCopy');
+btnCopy.onclick = copy;
+
 //Asignando la acción al boton de cerrar alert
-var eventAlert = document.querySelector(".close");
+var eventAlert = document.querySelector('.close');
 eventAlert.onclick = hideAlert;
 
 //leyendo el valor del input
-var str = document.getElementById("txtInput");
+var strInput = document.getElementById('txtInput');
+
+//leyendo el valor del output
+var strOutput = document.getElementById('txtOutput');
 
 function encrypt() {
 
     hideAlert();
     standby('Procesando . . .');
 
-    const resultValidation = isValidTextToConvert(str.value);
+    const resultValidation = isValidTextToConvert(strInput.value);
 
     if (isEmpty(resultValidation)) {
 
@@ -26,7 +33,7 @@ function encrypt() {
         setTimeout(() => {
             var result = '';
             try {
-                result = fnEncrypt(str.value);
+                result = fnEncrypt(strInput.value);
                 setTimeout(() => {
                     hideLoader();
                     showpnlOutput(result);
@@ -53,7 +60,7 @@ function decrypt() {
     hideAlert();
     standby('Procesando . . .');
 
-    const resultValidation = isValidTextToConvert(str.value);
+    const resultValidation = isValidTextToConvert(strInput.value);
 
     if (isEmpty(resultValidation)) {
 
@@ -61,7 +68,7 @@ function decrypt() {
         setTimeout(() => {
             var result = '';
             try {
-                result = fnDecrypt(str.value);
+                result = fnDecrypt(strInput.value);
                 setTimeout(() => {
                     hideLoader();
                     showpnlOutput(result);
@@ -81,4 +88,8 @@ function decrypt() {
         standby(resultValidation);
     }
 
+}
+
+function copy() {
+    copyToClipboard(strOutput.value);
 }

@@ -1,4 +1,4 @@
-/* animación para las entradas */
+/* animación para la entrada */
 
 @keyframes slideinsplash {
     from {
@@ -10,30 +10,5 @@
         height: 99%;
         margin-left: 0%;
         width: 99%;
-    }
-}
-
-
-/* responsive de la pagina*/
-
-@media screen and (max-device-width: 950px) and (max-device-height: 1400px) {
-    @keyframes slideininput {
-        from {
-            width: 0;
-        }
-        to {
-            width: 100%;
-        }
-    }
-    @keyframes slideinoutput {
-        from {
-            width: 0;
-            float: left;
-        }
-        to {
-            width: 100%;
-            float: left;
-            margin-top: 7%;
-        }
     }
 }

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sprint 01</title>
     <link rel="stylesheet" href="css/components/reset.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/splash.css">
@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="css/components/animations.css">
     <link rel="stylesheet" href="css/components/loader.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,700,1,0" />
 </head>
 
 <body>
@@ -31,10 +30,8 @@
             <div>
                 <textarea id="txtInput" placeholder="Ingresa el texto aqui ..."></textarea>
             </div>
-
             <div class="buttons">
-
-                <button id="btnEncriptar">
+                <button id="btnEncrypt">
                     <div class="svg-wrapper-1">
                         <div class="svg-wrapper">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1600" width="24" height="24" id="encryption-file">
@@ -49,7 +46,7 @@
                     </div>
                     <span>Encriptar</span>
                     </button>
-                <button id="btnDesencriptar">
+                <button id="btnDecrypt">
                     <div class="svg-wrapper-1">
                       <div class="svg-wrapper">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="24" height="24" id="dencrypted-file">
@@ -62,15 +59,13 @@
                     <span>Desencriptar</span>
                 </button>
             </div>
-
         </section>
-
         <section id="output" class="hidden">
             <div>
                 <textarea class="read-only" id="txtOutput"></textarea>
             </div>
             <div class="buttons">
-                <button>
+                <button id="btnCopy">
                     <div class="svg-wrapper-1">
                       <div class="svg-wrapper">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" id="copy">
@@ -85,28 +80,50 @@
         </section>
         <section id="preview" class="hidden">
             <div class="card">
-                <div class="overlay"></div>
                 <div class="info">
                     <img src="img/msg_clean.png">
                 </div>
                 <p id="txtMsg">
                 </p>
             </div>
-
-
         </section>
     </main>
     <footer>
-        <p>Copyrigth <span class="material-symbols-sharp" style="font-size: 1vh;">copyright</span> 2023 - Moisés Granciano Rosales - Challenge ONE - Edición #5</p>
+        <p>Copyrigth
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12" id="copyright-sign">
+                    <path fill="currentColor" d="M11,9h2a1,1,0,0,1,1,1,1,1,0,0,0,2,0,3,3,0,0,0-3-3H11a3,3,0,0,0-3,3v4a3,3,0,0,0,3,3h2a3,3,0,0,0,3-3,1,1,0,0,0-2,0,1,1,0,0,1-1,1H11a1,1,0,0,1-1-1V10A1,1,0,0,1,11,9Zm1-7A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z"></path>
+                </svg>
+            </span> 2023 - Moisés Granciano Rosales - Challenge ONE - Edición #5
+            <span>
+                <a href="https://github.com/mgranciano/challengeonecodificador5" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  width="18" height="18"  id="github">
+                        <path d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z"></path>
+                    </svg>
+                </a>
+            </span>
+            <span>
+                <a href="https://www.linkedin.com/in/moises-granciano-2840b6197" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.87 28.87" width="18" height="18" id="linkedin">
+                        <g data-name="Layer 2">
+                            <g data-name="Layer 1">
+                                <rect width="28.87" height="28.87" fill="#0b86ca" rx="6.48" ry="6.48"></rect>
+                                <path fill="#fff" d="M8 12h3v9.68H8zm1.53-4.81a1.74 1.74 0 11-1.74 1.75 1.74 1.74 0 011.74-1.75M12.92 12h2.89v1.32a3.16 3.16 0 012.85-1.56c3 0 3.61 2 3.61 4.61v5.31h-3V17c0-1.12 0-2.57-1.56-2.57s-1.8 1.22-1.8 2.48v4.79h-3z"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+                
+            </span>
+        </p>
     </footer>
-
     <div class="splash">
         <h1 class="splash-header">Bienvenido a mi Challenge ONE - Encriptador</h1>
     </div>
 </body>
 
 <div class="alert">
-    <div class="icon__wrapper">
+    <div class="icon-wrapper">
         <span class="error hidden">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" width="24" height="24" id="alert">
                 <path fill="currentColor" fill-rule="evenodd" d="M5.06875 2.52286C5.46561 1.83092 6.20233 1.40417 7 1.40417C7.79767 1.40417 8.53439 1.83092 8.93125 2.52286L12.7418 9.16667C12.911 9.46161 13 9.79568 13 10.1357C13 11.2113 12.128 12.0833 11.0524 12.0833H2.94765C1.87199 12.0833 1 11.2113 1 10.1357C1 9.79568 1.08901 9.46161 1.25816 9.16667L5.06875 2.52286ZM7 2.40417C6.56061 2.40417 6.1548 2.63924 5.9362 3.02038L2.12561 9.6642C2.04331 9.8077 2 9.97025 2 10.1357C2 10.6591 2.42428 11.0833 2.94765 11.0833H11.0524C11.5757 11.0833 12 10.6591 12 10.1357C12 9.97025 11.9567 9.8077 11.8744 9.6642L8.0638 3.02038C7.8452 2.63924 7.43939 2.40417 7 2.40417Z" clip-rule="evenodd"></path>
@@ -133,6 +150,7 @@
 <script type="text/javascript" src="js/actions/loader.js"></script>
 <script type="text/javascript" src="js/actions/alerts.js"></script>
 <script type="text/javascript" src="js/utils/validations.js"></script>
+<script type="text/javascript" src="js/utils/options.js"></script>
 <script type="text/javascript" src="js/challenge/encrypt.js"></script>
 <script type="text/javascript" src="js/actions/buttons.js"></script>
 

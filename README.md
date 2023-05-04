@@ -30,7 +30,7 @@ Ejemplo 2:
 fenterlimescimesdaidenters" => "felicidades"
 ```
 
-## Diseño final
+## Diseño final v1
 <p align="center">
   <img src="https://github.com/mgranciano/challengeonecodificador5/blob/master/img/screen01.png" width="450">
 </p>

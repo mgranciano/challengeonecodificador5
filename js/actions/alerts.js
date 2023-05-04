@@ -17,7 +17,7 @@ function hideAlert() {
     alertWindow.style.opacity = 0;
 }
 
-function showIconAlert(opc, str) {
+function eventAlertOpen(opc, str) {
 
     errorIcon.classList.add('hidden');
     successIcon.classList.add('hidden');
@@ -44,9 +44,4 @@ function showIconAlert(opc, str) {
         hideAlert();
     }, 4500);
 
-}
-
-
-function eventAlertOpen(opc, str) {
-    showIconAlert(opc, str);
 }

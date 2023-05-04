@@ -26,7 +26,7 @@
     background: var(--success);
 }
 
-.alert .icon__wrapper {
+.alert .icon-wrapper {
     height: 34px;
     width: 34px;
     border-radius: 50%;
@@ -36,7 +36,7 @@
     justify-content: center;
 }
 
-.alert .icon__wrapper span {
+.alert .icon-wrapper span {
     font-size: 21px;
     color: #fff;
 }
@@ -45,12 +45,6 @@
     color: #fff;
     font-family: inherit;
     margin-left: 20px;
-}
-
-.alert p a,
-.alert p a:visited,
-.alert p a:active {
-    color: #fff;
 }
 
 .alert .close {

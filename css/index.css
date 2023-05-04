@@ -144,17 +144,6 @@ main section div {
     z-index: 1;
 }
 
-.overlay {
-    width: 118px;
-    position: absolute;
-    height: 118px;
-    border-radius: 50%;
-    background: var(--bg-color);
-    top: 70px;
-    left: 50px;
-    z-index: 0;
-}
-
 footer {
     min-height: 3vh;
     max-height: 3vh;

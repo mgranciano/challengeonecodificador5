@@ -14,7 +14,7 @@ function isValidTextToConvert(str) {
 
     let result = '';
 
-    str = str.split("\n").join("");
+    str = str.split('\n').join('');
 
     if (isEmpty(str)) {
         result = 'El texto no puede estar vacío.';
